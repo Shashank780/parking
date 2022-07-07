@@ -1,0 +1,11 @@
+<div *ngIf='!user' class="text-center">
+        <p>or</p>
+        <p>Sign-in with Google</p>
+        <button class="btn fab fa-google mx-1" (click)="signInWithGoogle()"></button>
+</div>
+
+<div *ngIf='user'>
+        <h4 class="card-title">{{user.name}}</h4>
+        <p class="card-text">{{user.email}}</p>
+        <button class="btn ab fa-google mx-1" (click)="signOut()">Sign Out</button>
+</div>
